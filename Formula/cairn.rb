@@ -1,25 +1,25 @@
 class Cairn < Formula
   desc "Foundation package for the Cairn architecture graph tool."
   homepage "https://github.com/cairn-framework/cairn"
-  version "0.1.4"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cairn-framework/cairn/releases/download/v0.1.4/cairn-framework-aarch64-apple-darwin.tar.xz"
-      sha256 "5da8296271f82f59bfd85481349d7f5cb3919661759a96e39e96bbb8a688b056"
+      url "https://github.com/cairn-framework/cairn/releases/download/v0.2.0/cairn-framework-aarch64-apple-darwin.tar.xz"
+      sha256 "a452b7273bbad71c7d5e9e8767c2d16bcc390d3649627486cd24115dd08ee677"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cairn-framework/cairn/releases/download/v0.1.4/cairn-framework-x86_64-apple-darwin.tar.xz"
-      sha256 "6ccb86368617a57fbacba37662ba9721effc61df35c2b06217fcfb09ade7aa1b"
+      url "https://github.com/cairn-framework/cairn/releases/download/v0.2.0/cairn-framework-x86_64-apple-darwin.tar.xz"
+      sha256 "477d37541504701d5dcfedfc17c848464fe33e2ea86f75a5ee6b89c7ed106150"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cairn-framework/cairn/releases/download/v0.1.4/cairn-framework-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0fc1c7b1f6604aa74762f7b910689d7a215d14e0878c614dac715e7ce636609e"
+      url "https://github.com/cairn-framework/cairn/releases/download/v0.2.0/cairn-framework-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e8f2ff988bc180968a8edb79303c84c9e447200054ac812f06b3ad2895204e52"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cairn-framework/cairn/releases/download/v0.1.4/cairn-framework-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "859f4141cd48f1b39f9d08dc61c8d35863f85834771ae6c586f343fddb7df39c"
+      url "https://github.com/cairn-framework/cairn/releases/download/v0.2.0/cairn-framework-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0bc12199f0c92df8d7fc6e581afee562d62d9650717f88ff423c95888c98e414"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
